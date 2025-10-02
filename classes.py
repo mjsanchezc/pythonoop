@@ -17,6 +17,14 @@ class Dog:
   
   def get_age(self):
     return self.age
+  
+  def set_name(self, name):
+    self.name = name
+    return self.name
+  
+  def set_age(self, age):
+    self.age = age
+    return self.age
 
 d = Dog("Tim", 6)              # Tim
 d2 = Dog("Bill", 2)            # Bill
@@ -26,4 +34,7 @@ print(type(d))                 # <class '__main__.Dog'>
 
 print(d.get_age())             # 6
 print(d2.get_name())           # Bill
+
+print(d.set_age(5))            # 5
+print(d2.set_name("Max"))      # Max
 
